@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Form</title>
+<link rel="stylesheet" href="styleall.css">
+<script src="Dindex.js"></script>
+
+</head>
+ <body>
+  <div class="container">
+    <h1>Application Form For Junior Research Fellow / Research Associate</h1>
+    <h2>Solid State Physics Laboratory (SSPL), Defence Research & Development Organization (DRDO)<br><br>
+    Min. of Defence. Timarpur, Delhi-110054</h2>
+    
+   <div class="table"> 
+     <form>
+             <table class="table"> 
+                
+                <tr> 
+                    <td>1.</td>
+                    <td>Application for : </td>
+                    <td id="box"> <input type="radio" name="Application for">Research Associate
+                        <input type="radio" name="Application for">JRF(DRDO Fellowship)
+                        <input type="radio" name="Application for">JRF(Own Fellowship)
+                    </td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td id="box1">What is your highest relevant educational qualification ?</td>
+                    <td id="box"> <input type="radio" name="What is your highest relevant educational qualification ?">PHD
+                        <input type="radio" name="What is your highest relevant educational qualification ?">M.Tech/M.E.
+                        <input type="radio" name="What is your highest relevant educational qualification ?">M.Sc.
+                        <input type="radio" name="What is your highest relevant educational qualification ?">B.Tech/B.E.
+                    </td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td id="box1">Which Test you have qualified ? 
+                        (NET, GATE,etc.)
+                    </td>
+                    <td id="box">
+                        <input type= "radio" name= "Which Test you have qualified ? (NET, GATE,etc.)">Both NET & GATE
+                        <input type= "radio" name= "Which Test you have qualified ? (NET, GATE,etc.)">NET (Fellowship)
+                        <input type= "radio" name= "Which Test you have qualified ? (NET, GATE,etc.)">NET(Lectureship)
+                        <input type= "radio" name= "Which Test you have qualified ? (NET, GATE,etc.)">GATE
+                        <input type= "radio" name= "Which Test you have qualified ? (NET, GATE,etc.)">Neither NET Nor GATE
+                </tr>
+                <tr>
+                    <td>4.</td>
+                   <td>What is the year of qualifying NET/GATE ? </td>
+                    <td>
+                        <input type="text" id="years"  >
+                      
+                    </td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Total Work Experience</td>
+                    <td class="box3">
+                        <span>
+                            <input type="radio" name="work Experience">>3 Years
+                            <input type="radio" name="work Experience">Between 1 Years & 3 Years
+                            <input type="radio" name="work Experience"> 1 Years
+                            <input type="radio" name="work Experience">NIl
+                        </span>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>6.</td>
+                    <td>Discipline/Subject</td>
+                    <td><span> <input type="text" id="subject" placeholder="physics etc" >  </span></td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td>Full Name in BLOCK Letters</td>
+                    <td><span><input type="text" id="name"placeholder="Enter Full Name"  > </span></td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td>Father's Name</td>
+                    <td><span> <input type="text" id="Father's name"placeholder="Enter Full Name"  > </span></td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td>Mother's Name</td>
+                    <td><span><input type="text" id="mother's name"placeholder="Enter Full Name"  ></span></td>
+                </tr>
+                <tr>
+                    <td>10.</td>
+                    <td>Gender</td>
+                    <td>
+                    <span><input type="radio" name="gender">Male
+                        <input type="radio" name="gender">Female
+                        <input type="radio" name="gender">Other
+                    </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11.</td>
+                    <td><div class="form-group">
+                    <label for="date-of-birth">Date of birth (dd/mm/yyyy)</label></td>
+                    <td> <input type="date" id="date-of-birth" name="date-of-birth"placeholder="Enter Date Of Birth "></td>
+                </tr>
+                <tr>
+                    <td>12.</td>
+                    <td>Email</td>
+                    <td><span><input type="text" id="email" placeholder=" Enter Email" > </span> </td>
+                </tr>
+                <tr><td>13.</td>
+                    <td> <label for="contact-numbers">Contact Numbers</label></td>
+                    <td><input type="text" id="contact-numbers" name="contact-numbers" placeholder="Enter Contact Numbers"></td>
+                </tr>
+                <tr>
+                    <td>14.</td>
+                    <td>Category (Gen/Obc/SC/ST/PH)</td>
+                    <td><span>
+                        <input type="radio" name="category">General
+                        <input type="radio" name="category">OBC
+                        <input type="radio" name="category">SC
+                        <input type="radio" name="category">ST
+                        <input type="radio" name="category">PH
+                        </span>
+                    </td>
+                </tr>
+                </table>
+                <table class="table">
+                <tr>
+                    <tr> <h4>15. Present Address for correspondence</tr></h4>
+                    <tr><div class="form-group">
+                        <label for="present-address">Present address for correspondence</label>
+                        <input type="text" id="present-address" name="present-address" placeholder="Enter Address Line 1">
+                        <input type="text" id="present-address-line-2" name="present-address-line-2" placeholder="Enter Address Line 2">
+                        <input type="text" id="city-state" name="city-state" placeholder="Enter City, State">
+                        <input type="text" id="pin-code" name="pin-code" placeholder="Enter Pin Code">
+                        <input type="text" id="mobile" name="mobile" placeholder="Enter Mobile">
+                        <input type="text" id="landline" name="landline" placeholder="Enter Landline">
+                      </div></tr>
+        
+                </tr>
+            </table>
+           
+                     <h2> 16. Educational Qualifications (From X onwards in chronological order)</h2>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th>No.</th>
+                            <th>Qualification (Degree & Subject)</th>
+                            <th>Board/University</th>
+                            <th>Year of passing</th>
+                            <th>Percentage(%)/ GPA</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td>a)</td>
+                              <td><input type="text" name="qualification-a" placeholder="Enter Qualification"></td>
+                              <td><input type="text" name="board-university-a" placeholder="Enter Board/University"></td>
+                              <td><input type="text" name="year-of-passing-a" placeholder="Enter Year"></td>
+                              <td><input type="text" name="percentage-gpa-a" placeholder="Enter Percentage/GPA"></td>
+                            </tr>
+                            <tr>
+                              <td>b)</td>
+                              <td><input type="text" name="qualification-b" placeholder="Enter Qualification"></td>
+                              <td><input type="text" name="board-university-b" placeholder="Enter Board/University"></td>
+                              <td><input type="text" name="year-of-passing-b" placeholder="Enter Year"></td>
+                              <td><input type="text" name="percentage-gpa-b" placeholder="Enter Percentage/GPA"></td>
+                            </tr>
+                            <tr>
+                              <td>c)</td>
+                              <td><input type="text" name="qualification-c" placeholder="Enter Qualification"></td>
+                              <td><input type="text" name="board-university-c" placeholder="Enter Board/University"></td>
+                              <td><input type="text" name="year-of-passing-c" placeholder="Enter Year"></td>
+                              <td><input type="text" name="percentage-gpa-c" placeholder="Enter Percentage/GPA"></td>
+                            </tr>
+                            <tr>
+                              <td>d)</td>
+                              <td><input type="text" name="qualification-d" placeholder="Enter Qualification"></td>
+                              <td><input type="text" name="board-university-d" placeholder="Enter Board/University"></td>
+                              <td><input type="text" name="year-of-passing-d" placeholder="Enter Year"></td>
+                              <td><input type="text" name="percentage-gpa-d" placeholder="Enter Percentage/GPA"></td>
+                            </tr>
+                            <tr>
+                              <td>e)</td>
+                              <td><input type="text" name="qualification-e" placeholder="Enter Qualification"></td>
+                              <td><input type="text" name="board-university-e" placeholder="Enter Board/University"></td>
+                              <td><input type="text" name="year-of-passing-e" placeholder="Enter Year"></td>
+                              <td><input type="text" name="percentage-gpa-e" placeholder="Enter Percentage/GPA"></td>
+                            </tr>
+                            <tr>
+                              <td>f)</td>
+                              <td><input type="text" name="qualification-f" placeholder="Enter Qualification"></td>
+                              <td><input type="text" name="board-university-f" placeholder="Enter Board/University"></td>
+                              <td><input type="text" name="year-of-passing-f" placeholder="Enter Year"></td>
+                              <td><input type="text" name="percentage-gpa-f" placeholder="Enter Percentage/GPA"></td>
+                            </tr>
+                            <tr>
+                              <td>g)</td>
+                              <td><input type="text" name="qualification-g" placeholder="Enter Qualification"></td>
+                              <td><input type="text" name="board-university-g" placeholder="Enter Board/University"></td>
+                              <td><input type="text" name="year-of-passing-g" placeholder="Enter Year"></td>
+                              <td><input type="text" name="percentage-gpa-g" placeholder="Enter Percentage/GPA"></td>
+                            </tr>
+                          </tbody>
+                        </table></td>
+                </tr>
+            
+                    <h2> 17. Work Experience</h2>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th>No.</th>
+                            <th>Name of Post</th>
+                            <th>Details of Orgn./ Company</th>
+                            <th>Location</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Nature of duties performed</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>a)</td>
+                            <td><input type="text" name="name-of-post-a" placeholder="Enter Name of Post"></td>
+                            <td><input type="text" name="details-of-orgn-a" placeholder="Enter Details of Orgn./Company"></td>
+                            <td><input type="text" name="location-a" placeholder="Enter Location"></td>
+                            <td><input type="text" name="from-a" placeholder="Enter From"></td>
+                            <td><input type="text" name="to-a" placeholder="Enter To"></td>
+                            <td><input type="text" name="nature-of-duties-a" placeholder="Enter Nature of duties performed"></td>
+                          </tr>
+                          <tr>
+                            <td>b)</td>
+                            <td><input type="text" name="name-of-post-b" placeholder="Enter Name of Post"></td>
+                            <td><input type="text" name="details-of-orgn-b" placeholder="Enter Details of Orgn./Company"></td>
+                            <td><input type="text" name="location-b" placeholder="Enter Location"></td>
+                            <td><input type="text" name="from-b" placeholder="Enter From"></td>
+                            <td><input type="text" name="to-b" placeholder="Enter To"></td>
+                            <td><input type="text" name="nature-of-duties-b" placeholder="Enter Nature of duties performed"></td>
+                          </tr>
+                          <tr>
+                            <td>c)</td>
+                            <td><input type="text" name="name-of-post-c" placeholder="Enter Name of Post"></td>
+                            <td><input type="text" name="details-of-orgn-c" placeholder="Enter Details of Orgn./Company"></td>
+                            <td><input type="text" name="location-c" placeholder="Enter Location"></td>
+                            <td><input type="text" name="from-c" placeholder="Enter From"></td>
+                            <td><input type="text" name="to-c" placeholder="Enter To"></td>
+                            <td><input type="text" name="nature-of-duties-c" placeholder="Enter Nature of duties performed"></td>
+                          </tr>
+                          <tr>
+                            <td>d)</td>
+                            <td><input type="text" name="name-of-post-d" placeholder="Enter Name of Post"></td>
+                            <td><input type="text" name="details-of-orgn-d" placeholder="Enter Details of Orgn./Company"></td>
+                            <td><input type="text" name="location-d" placeholder="Enter Location"></td>
+                            <td><input type="text" name="from-d" placeholder="Enter From"></td>
+                            <td><input type="text" name="to-d" placeholder="Enter To"></td>
+                            <td><input type="text" name="nature-of-duties-d" placeholder="Enter Nature of duties performed"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+            
+            
+             <div class="section">
+                <h2>Education</h2>
+                <label for="highestQualification">Highest Qualification:</label>
+                <input type="text" id="highestQualification" name="highestQualification"><br><br>
+                <label for="netGateScore">NET/GATE Score:</label>
+                <input type="text" id="netGateScore" name="netGateScore"><br><br>
+            </div>
+            <div class="section">
+                <h2>Publications</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Authors</th>
+                            <th>Journal</th>
+                            <th>Vol.</th>
+                            <th>Page No.</th>
+                            <th>Year</th>
+                            <th>Journal Impact Factor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" id="publication1Title" name="publication1Title"></td>
+                            <td><input type="text" id="publication1Authors" name="publication1Authors"></td>
+                            <td><input type="text" id="publication1Journal" name="publication1Journal"></td>
+                            <td><input type="text" id="publication1Vol" name="publication1Vol"></td>
+                            <td><input type="text" id="publication1PageNo" name="publication1PageNo"></td>
+                            <td><input type="text" id="publication1Year" name="publication1Year"></td>
+                            <td><input type="text" id="publication1JournalImpactFactor" name="publication1JournalImpactFactor"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="publication2Title" name="publication2Title"></td>
+                            <td><input type="text" id="publication2Authors" name="publication2Authors"></td>
+                            <td><input type="text" id="publication2Journal" name="publication2Journal"></td>
+                            <td><input type="text" id="publication2Vol" name="publication2Vol"></td>
+                            <td><input type="text" id="publication2PageNo" name="publication2PageNo"></td>
+                            <td><input type="text" id="publication2Year" name="publication2Year"></td>
+                            <td><input type="text" id="publication2JournalImpactFactor" name="publication2JournalImpactFactor"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="publication1Title" name="publication1Title"></td>
+                            <td><input type="text" id="publication1Authors" name="publication1Authors"></td>
+                            <td><input type="text" id="publication1Journal" name="publication1Journal"></td>
+                            <td><input type="text" id="publication1Vol" name="publication1Vol"></td>
+                            <td><input type="text" id="publication1PageNo" name="publication1PageNo"></td>
+                            <td><input type="text" id="publication1Year" name="publication1Year"></td>
+                            <td><input type="text" id="publication1JournalImpactFactor" name="publication1JournalImpactFactor"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="publication1Title" name="publication1Title"></td>
+                            <td><input type="text" id="publication1Authors" name="publication1Authors"></td>
+                            <td><input type="text" id="publication1Journal" name="publication1Journal"></td>
+                            <td><input type="text" id="publication1Vol" name="publication1Vol"></td>
+                            <td><input type="text" id="publication1PageNo" name="publication1PageNo"></td>
+                            <td><input type="text" id="publication1Year" name="publication1Year"></td>
+                            <td><input type="text" id="publication1JournalImpactFactor" name="publication1JournalImpactFactor"></td>
+                        </tr>
+                        <!-- Add more rows for additional publications -->
+                    </tbody>
+                </table>
+            </div>
+            <h2>Additional Information:</h2>
+           <ul>
+            <li><h4>Have you ever registered for PhD ? </h4></li>
+            <p id="phdRegistration"> <input type="radio" name="Have you ever registered for PhD ?"  value="yes" >Yes
+             <input type="radio" name="Have you ever registered for PhD ?" value="No" >No</p>
+
+             <li><h4>Have you ever been convicted by a court of law ?</h4></li>
+             <p id="convicted"> <input type="radio" name="Have you ever been convicted by a court of law ?"value="Yes">Yes
+                <input type="radio" name="Have you ever been convicted by a court of law ?"value="No">No </p>
+                 
+               <li> <h4>Is there any enquiry pending against you ?</h4></li>
+                <p id="enquiry"> <input type="radio" name="Is there any enquiry pending against you ?" value="Yes">Yes
+                    <input type="radio" name="Is there any enquiry pending against you ?" value="no">No </p> 
+            </ul>
+                   
+                   <h3>Documents</h3>
+                   <table class="table">
+                    <tbody>
+                      <tr>
+                        <td>a)</td>
+                        <td>Upload image</td>
+                        <td> 
+                            <label for="input-file">upload image</label>
+                             <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+                        </td>
+            
+                    </tr>
+                        <tr>
+                        <td>b)</td>
+                        <td>10 Marksheet</td>
+                        <td> <label for="input-file">upload file</label>
+                          <input type="file" class="file" id="input-file"></td>
+                    </tr>
+                        <tr>
+                            <td>c)</td>
+                            <td>12 Marksheet</td>
+                            <td><label for="input-file">upload file</label>
+                              <input type="file"  class="file"  id="input-file">
+                        </tr>
+                        <tr>
+                          <td>d)</td>
+                          <td>Graduation</td>
+                          <td><label for="input-file">upload file</label>
+                            <input type="file"  class="file"  id="input-file">
+                      </tr>
+                      <tr>
+                        <td>e)</td>
+                        <td>Post Graduation</td>
+                        <td><label for="input-file">upload file</label>
+                          <input type="file"  class="file"  id="input-file">
+                    </tr>
+                    <tr>
+                      <td>f)</td>
+                      <td>P.H.D Marsheet</td>
+                      <td> <label for="input-file">upload file</label>
+                        <input type="file" class="file"  id="input-file"></td>
+                  </tr>
+                  
+                        <tr>
+                            <td>f)</td>
+                            <td>Upload Resume</td>
+                            <td> <label for="input-file">upload file</label>
+                              <input type="file" class="file"  id="input-file"></td>
+                        </tr>
+                        <tr>
+                          <td>f)</td>
+                          <td>Upload Signature</td>
+                          <td> <label for="input-file">upload image</label>
+                            <input type="file" accept="image"  id="image-input"></td>
+                      </tr>
+                      
+                    </tbody>
+
+                   </table>
+                 
+                  
+                   <form id="myForm">
+                    <input type="checkbox" id="myCheckbox" name="myCheckbox" required>
+                    <label for="myCheckbox">I agree to the terms and conditions</label>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            
+            
+
+                   
+            <form>
+        </div> 
+  </body>
+</html>
