@@ -1,55 +1,255 @@
+/* Reset some basics */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: sans-serif;
-  }
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 40px 20px;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* Headings */
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #3b157f;
+  text-align: center;
+  text-shadow: 0 1px 3px #9c8bff;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.4;
+  color: #5a3e99;
+  border-bottom: 2px solid #764ba2;
+  padding-bottom: 6px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3, h4 {
+  color: #4a2c9e;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 1px 3px #bba8f7;
+}
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 20px #b5a7f7aa;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f7f5ff;
+}
+
+tbody tr:hover {
+  background: #d8d2faff;
+  transition: background 0.3s ease;
+}
+
+td {
+  padding: 12px 15px;
+  vertical-align: top;
+  font-size: 15px;
+  color: #3e2e7e;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+td:first-child {
+  width: 30px;
+  font-weight: bold;
+  color: #764ba2;
+}
+
+td:nth-child(2) {
+  width: 280px;
+  font-weight: 600;
+  color: #5a3e99;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #b19cd9;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+  box-shadow: inset 0 1px 3px #e4d8ff;
+  background: #f0ecff;
+  color: #4b3f72;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus {
+  border-color: #3b157f;
+  box-shadow: 0 0 8px #9c8bffaa;
+  background: #f7f5ff;
+}
+
+/* File inputs and labels */
+input[type="file"] {
+  cursor: pointer;
+  padding: 6px 8px;
+  font-size: 13px;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  color: #5b4dbf;
+}
+
+label[for="input-file"], label[for="image-input"] {
+  cursor: pointer;
+  color: #5b4dbf;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: underline;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Radio buttons container */
+#box, #box1, .box3, td span {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+#box input[type="radio"],
+#box1 input[type="radio"],
+.box3 input[type="radio"],
+td span input[type="radio"] {
+  margin-right: 6px;
+  cursor: pointer;
+  accent-color: #764ba2;
+  width: 18px;
+  height: 18px;
+}
+
+/* Span styling */
+span {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #4b3f72;
+}
+
+/* Form groups for present address */
+.form-group input[type="text"] {
+  margin-bottom: 12px;
+}
+
+/* Section container styling */
+.section {
+  margin-top: 40px;
+  padding: 25px;
+  background: #f3e8ff;
+  border-radius: 10px;
+  box-shadow: inset 0 0 12px #c9b3f9;
+}
+
+/* Checkbox */
+#myCheckbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #764ba2;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+label[for="myCheckbox"] {
+  font-weight: 600;
+  color: #5b4dbf;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/* Submit button */
+input[type="submit"], button {
+  background-color: #764ba2;
+  border: none;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 5px 15px #9c8bffaa;
+  font-weight: 700;
+}
+
+input[type="submit"]:hover, button:hover {
+  background-color: #5a2e85;
+  box-shadow: 0 6px 20px #764ba2cc;
+}
+
+/* Responsive tweaks */
+@media (max-width: 700px) {
   .container {
-    width: 80%;
-    margin: 0 auto;
+    padding: 20px 25px;
   }
-  h1 {
-    text-align: center;
-    margin-top: 20px;
+
+  td:nth-child(2) {
+    width: auto;
   }
-  h2 {
-    margin-top: 30px;
+
+  #box, #box1, .box3, td span {
+    flex-direction: column;
+    gap: 10px;
   }
-  .form-group {
-    margin-bottom: 20px;
+
+  td {
+    padding: 10px 8px;
   }
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  input[type="text"],
-  input[type="email"],
-  textarea {
+
+  input[type="submit"], button {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
   }
-  input[type="radio"] {
-    margin-right: 5px;
-  }
-  .btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  .table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  .table th,
-  .table td {
-    border: 1px solid #ccc;
-    padding: 8px;
-    text-align: left;
-  }
-  .table th {
-    background-color: #f2f2f2;
-  }
+}
+
+  
